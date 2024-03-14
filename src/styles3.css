@@ -1,0 +1,176 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Forque';
+    src: url('/sources/fonts/Forque.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+.links-nav{
+    z-index: 100;
+}
+
+body {
+    font-family: 'lexend';
+    background-color: #7D4DA5;
+}
+
+#logo{
+    z-index: 1000;
+}
+
+/* nav */
+
+nav {
+    z-index: 100;
+    background-color: #8D5AB7;
+    display: flex;
+    flex-direction: row;
+    padding: 27px 120px;
+
+    & .links-nav {
+        background-color: #905ACC;
+        margin-left: 26%;
+        width: 450px;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        top: 50%;
+        border-radius: 50px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+        a {
+            color: #f9f9f9;
+            font-weight: 500;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: #FFC54D;
+            }
+
+            &:active {
+                color: #FFC54D;
+            }
+        }
+    }
+}
+
+.intro {
+    margin-top: -2rem;
+    width: 100%;
+
+    & img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .intro {
+        width: 100%;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+#IntroP{
+    color: white;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 70%;
+    left: 32%;
+    font-family: "lexend";
+    font-size: 20px;
+}
+
+#why_languaje{
+    margin-left: 7rem;
+    margin-top: 3rem;
+}
+
+#why_txt{
+    color: white;
+    width: 500px;
+    height: auto;
+    font-family: "lexend";
+    font-size: 20px;
+    margin-top: -3rem;
+    margin-left: 0.2rem;
+}
+
+h2 {
+    color: white;
+    font-family: 'Forque';
+    font-weight: 500;
+    font-size: 4rem;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+
+    margin-top:10rem;
+}
+
+#developProofsPics{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin: 5rem;
+}
+
+.proof:hover{
+    transform: scale(1.05);
+    transition: transform 1.1s;
+}
+
+footer {
+    background-color: #a069cc;
+    color: #f9f9f9;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 210px;
+    padding: 20px 200px;
+
+    & p {
+        &:hover {
+            color: #FFC54D;
+            text-shadow: 1px 1px 5px #DFA43C;
+            scale: 1.1;
+        }
+    }
+
+    & .div-img {
+        width: 150px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    & .img-line {
+        height: 120px;
+    }
+
+    & .redes {
+        margin-top: 10px;
+
+        & i {
+            font-size: 1.3rem;
+            padding: 12px;
+            border-radius: 50px;
+            background-color: #DFA43C;
+            box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.3);
+            color: #f9f9f9;
+        }
+    }
+
+}
+

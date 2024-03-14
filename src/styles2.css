@@ -1,0 +1,182 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Forque';
+    src: url('/sources/fonts/Forque.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'lexend';
+}
+
+.content {
+    background-color: #7D4DA5;
+}
+
+/* nav */
+
+nav {
+    background-color: #8D5AB7;
+    display: flex;
+    flex-direction: row;
+    padding: 27px 120px;
+
+    & .links-nav {
+        background-color: #905ACC;
+        margin-left: 26%;
+        width: 450px;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        top: 50%;
+        border-radius: 50px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+        a {
+            color: #f9f9f9;
+            font-weight: 500;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: #FFC54D;
+            }
+
+            &:active {
+                color: #FFC54D;
+            }
+        }
+    }
+}
+
+.intro {
+    width: 100%;
+
+    & img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .intro {
+        width: 100%;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+#IntroP{
+    color: white;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 600px;
+    left: 140px;
+    font-family: "lexend";
+    font-size: 20px;
+}
+
+.ArregloCards{
+    margin: 20px auto;
+    width: 1150px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ArregloCards img{
+    width: 500px;
+    margin: 40px;
+}
+
+.ArregloCards img:hover{
+    transform: scale(1.05);
+    transition: transform 1.1s;
+}
+
+.text-about {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left: 220px;
+    width: fit-content;
+    color: #f9f9f9;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & img{
+        margin-left: 200px;
+    }
+
+    & h2 {
+        font-family: 'Forque';
+        font-weight: 500;
+        font-size: 4rem;
+        letter-spacing: 0.5px;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        width: 450px;
+        font-size: 20px;
+    }
+
+}
+
+
+
+footer {
+    background-color: #a069cc;
+    color: #f9f9f9;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 210px;
+    padding: 20px 200px;
+
+    & p {
+        &:hover {
+            color: #FFC54D;
+            text-shadow: 1px 1px 5px #DFA43C;
+            scale: 1.1;
+        }
+    }
+
+    & .div-img {
+        width: 150px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    & .img-line {
+        height: 120px;
+    }
+
+    & .redes {
+        margin-top: 10px;
+
+        & i {
+            font-size: 1.3rem;
+            padding: 12px;
+            border-radius: 50px;
+            background-color: #DFA43C;
+            box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.3);
+            color: #f9f9f9;
+        }
+    }
+
+}
+

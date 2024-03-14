@@ -1,0 +1,259 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Forque';
+    src: url('/sources/fonts/Forque.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+
+    /* padding: 30px; */
+    font-family: 'lexend';
+}
+
+.content {
+    background-color: #7D4DA5;
+}
+
+/* nav */
+
+nav {
+    background-color: #8D5AB7;
+    display: flex;
+    flex-direction: row;
+    padding: 27px 120px;
+
+    & .links-nav {
+        background-color: #905ACC;
+        margin-left: 26%;
+        width: 450px;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        top: 50%;
+        border-radius: 50px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+        a {
+            color: #f9f9f9;
+            font-weight: 500;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: #FFC54D;
+            }
+
+            &:active {
+                color: #FFC54D;
+            }
+        }
+    }
+}
+
+/* intro */
+
+.intro {
+    width: 100%;
+    & img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .intro {
+        width: 100%;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+/* about */
+
+.about-home {
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 100px;
+
+    & .img-about {
+        width: fit-content;
+        padding: 10px;
+
+        & img {
+            width: 45vw;
+        }
+    }
+
+    & .text-about {
+        width: fit-content;
+        color: #f9f9f9;
+        padding: 10px;
+
+        & h2 {
+            font-family: 'Forque';
+            font-weight: 500;
+            font-size: 4rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        & p {
+            width: 450px;
+            font-size: 20px;
+        }
+
+    }
+
+    & .about-details-btn {
+        background-color: #DFA43C;
+        color: #f9f9f9;
+        font-size: 16px;
+        font-weight: 600;
+        border: 1.5px solid #f9f9f9;
+        border-radius: 50px;
+        padding: 20px 25px;
+        margin-top: 40px;
+
+        &:hover {
+            background-color: #e49100;
+            box-shadow: 0px 0px 10px 1px rgba(226, 132, 0, 0.7);
+            scale: 1.1;
+            transition-duration: 0.3s;
+        }
+    }
+}
+
+/* carrusel */
+
+#contenedorCarrusel {
+    height: 710px;
+    overflow: hidden;
+
+    & i {
+        color: #f9f9f9;
+    }
+}
+
+.item-carrusel {
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.tarjeta-carrusel {
+    height: 100%;
+}
+
+.flechas-carrusel {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#item1 {
+    background-color: transparent;
+}
+
+#item2 {
+    background-color: transparent;
+}
+
+#item3 {
+    background-color: transparent;
+}
+
+#contenedorPuntos {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(101, 57, 151);
+    box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+
+    & a {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #f9f9f9;
+        text-decoration: none;
+        padding: 20px 89px;
+
+        &:hover {
+            background-color: #DFA43C;
+            padding: 20px 89px;
+            border-radius: 50px;
+        }
+
+        &::after {
+            background-color: #DFA43C;
+            padding: 20px 89px;
+            border-radius: 50px;
+        }
+    }
+}
+
+/* footer */
+
+footer {
+    background-color: #a069cc;
+    color: #f9f9f9;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 210px;
+    padding: 20px 200px;
+
+    & p {
+        &:hover {
+            color: #FFC54D;
+            text-shadow: 1px 1px 5px #DFA43C;
+            scale: 1.1;
+        }
+    }
+
+    & .div-img {
+        width: 150px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    & .img-line {
+        height: 120px;
+    }
+
+    & .redes {
+        margin-top: 10px;
+
+        & i {
+            font-size: 1.3rem;
+            padding: 12px;
+            border-radius: 50px;
+            background-color: #DFA43C;
+            box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.3);
+            color: #f9f9f9;
+        }
+    }
+
+}
